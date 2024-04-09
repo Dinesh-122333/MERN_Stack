@@ -1,0 +1,71 @@
+Node:
+	It is a runtime environment for executing JavaScript code
+Working :
+	Non blocking or Asynchronus Nature
+
+	ex:
+	     if a waiter comes two your table and gives to kitchen then they use to serve to another table while the dish is readying by the kitchen
+
+	--> A single thread handles multiple request
+	--> Node is  ideal for I/O -intensive app
+	--> Not for Cpu intensive apps like video encoding and image manipulation
+
+Global Function:
+
+	--> console.log();
+	--> setTimeout();
+	--> clearTimeout();
+	--> setInterval()
+	--> clearInterval();
+
+	--> where window is used for global object but in node global keyword is used
+eg:
+	global.setInterval()
+
+Module:
+	we need to create small building blocks or Module where we defines our variables and functions two variables or two functions 
+	with same name don't overwrite another variables or functions defined somewhere else that encapsulation inside 
+
+Creating a Module:
+
+	example in Module1.js
+
+Loading the Module:
+	example in app2.js
+	
+	using require functions
+		it takes one argument and that the name or path of the target module we want 
+		to load
+
+	--> using const for declaring logger variables is manditory
+
+using of jshint :
+	It is used to find any error in the particular file or Not
+
+	ex:
+		jshint app.js in cmd
+
+
+Module wrapper functions:
+	(function(exports, require, module, __filename, __dirname){ block contains }) 
+	Wrapper functions
+
+Built-in module:
+	--> using path module gives the info about the file 
+	--> using os module it gives the info about my local machine or serve info where I 
+	Working
+	--> using file module gives the all file name present in current directory and some info
+	--> using event module like  event handling only
+		*event argument
+			emitter.on ('logging', (arg) => {
+				console.log('Listener logged', arg);
+			});
+			emitter.emit('logging', {id : 1, data : 'your here'});
+		*extending EventEmitter
+		 	calling one file to another
+			ex: 
+				in logger2.js to app7.js
+	--> using http module
+		*http server inherits from net.Server class, where the net.Server is a EventEmitter 
+		so that all properties of EventEmitter had by the http server to  
+always use Asynchronus method

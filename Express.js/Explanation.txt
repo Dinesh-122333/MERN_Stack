@@ -1,0 +1,11 @@
+nodemon makes development easier a lot
+
+Sending request in Express:
+    --get
+    --post
+    --delete
+    --put 
+    all HTTP request is passed in the Express call request
+
+To run the server:
+    npm run devStart

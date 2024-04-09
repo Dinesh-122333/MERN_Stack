@@ -1,0 +1,30 @@
+React JS:
+    --> Open Source library for building user interface
+    --> Its not a frame work its a library
+    --> Focus on UI
+    --> it has Componenet Based Architechture
+    --> Declarative
+    --> JavaScript library for creating user interface
+    --> Simple Componenent 
+        - it has render() to render the html and function inside it 
+        - Componenent mean small chunks it is the small code where added to make a page
+    --> Using of it make more easier to make large or big page except from JS
+        - because it makes more efficent way that we can use the repetance of Componenent in any 
+        area we want
+
+State vs Props:
+
+    Props:
+        -it is argument to a function or passing a intial argument to a Componenent
+        -it is noting but storing some value which can used by the Componenent
+        ex:-
+            if a counter Componenent is there the start of counter is passed by Props only and the value is stored in via of Props
+    
+    State:
+        -it is inside of the Componenent where by above example if the props intialize the intial value then if the user press the 
+        Componenent then it increses or decreases its via state only where work inside the Componenent as some functionality
+        -it is noting but storing the data where the user manipulation are stored in it
+
+Axios- 
+    Use to fetch the api from browser as easier
+    which makes async request from the browser
